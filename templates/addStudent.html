@@ -1,0 +1,8 @@
+{% block content %}
+  <h1>Add information</h1>
+  <form method="POST" action="http://localhost:5000/addinformation">
+      <p>{{ form.sign.label }}{{ form.sign() }}</p>
+      {{ form.submit() }}
+  </form>
+{% endblock %}
+
